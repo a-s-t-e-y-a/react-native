@@ -8,7 +8,7 @@ import {
 } from "react-native"
 
 export default function Apppro(): JSX.Element{
-    const isDarkMode = useColorScheme() === 'dark'
+    const isDarkMode = useColorScheme() === 'dark' /// useColorScheme is basically a react hook that work with apperance 
     return(
        
             <View style={style_.container}>
@@ -23,8 +23,9 @@ export default function Apppro(): JSX.Element{
 const style_ = StyleSheet.create({
     container:{
         flex :1,
-        alignItems:'flex-start',
-        fontSize:'100px'
+        alignItems:'center',
+        justifyContent:'center'
+        
     },
     whiteText:{
         color:'#FFFFFF'
